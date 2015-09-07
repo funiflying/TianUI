@@ -1,0 +1,36 @@
+<!doctype html>
+<html ng-app="loveApp">
+
+<head>
+    <title>TUI</title>
+    <meta charset="utf-8">
+    <link href="/admin/css/TUI.css" rel="stylesheet">
+    <link href="/admin/css/admin.css" rel="stylesheet">
+    <script src="/lib/jquery/jquery-1.10.2.min.js"></script>
+    <script src="//cdn.bootcss.com/angular.js/1.4.0/angular.js"></script>
+    <script src="/lib/angular/angular-route.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/service.js"></script>
+</head>
+
+<body>
+
+    <div class="tui-container">
+        <div ng-include="'/admin/partials/header.html'"></div>
+        <div class="tui-main">
+            <!--左侧导航-->
+            <div class="tui-col-1 tui-padding-clear tui-navigation-container">
+                <div ng-include="'/admin/partials/navigation.html'" class="tui-navigation">
+                </div>
+
+                <!--end of 左侧导航-->
+            </div>
+            <div class="tui-col-5 tui-view" ng-view></div>
+
+        </div>
+        <div ng-include="'/admin/partials/footer.html'"></div>
+    </div>
+</body>
+
+</html>

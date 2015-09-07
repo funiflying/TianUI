@@ -1,0 +1,441 @@
+/*********************************************
+ *
+ *
+ *header
+ *
+ *
+ ***********************************************/
+
+.tui-header {
+    height: 60px;
+    background-color: #33bbd0;
+    color: #fff;
+}
+
+.tui-header-logo {
+    height: 60px;
+    vertical-align: middle;
+}
+
+.tui-top-nav {
+    height: 60px;
+    line-height: 100%;
+    overflow: hidden;
+}
+
+.tui-top-active,
+.tui-user-info> a:hover,
+.tui-top-nav >li:hover {
+    background-color: #2bacc0;
+}
+
+.tui-top-nav >li {
+    height: 100%;
+    line-height: 60px;
+    float: left;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.tui-top-home {
+    font-size: 30px;
+    color: #fff;
+    vertical-align: middle;
+}
+
+.tui-pop-container {
+    display: none;
+    position: absolute;
+    width: 350px;
+    height: auto;
+    padding: 0 0 10px 0;
+    color: #4d6584;
+    top: 60px;
+    z-index: 999;
+}
+
+.tui-pop-subNav {
+    background-color: #fff;
+    box-shadow: 1px 1px 3px 0 #ccc;
+    text-align: left;
+    border-radius: 0 0 4px 4px;
+    border-width: 3px 1px 1px;
+    border-style: solid;
+    border-color: #33bbd0 #d9d9d9 #d9d9d9;
+    margin-top: 5px;
+}
+
+.tui-pop-subNav::before {
+    content: "";
+    border-color: transparent transparent #33bbd0;
+    border-width: 0 5px 6px;
+    border-style: solid;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+.tui-pop-subNav h3 {
+    background-color: #f6f9fe;
+    padding-left: 20px;
+    height: 44px;
+    line-height: 44px;
+    color: #4d6584;
+}
+
+.tui-subnav-dl {
+    padding-left: 20px;
+}
+
+.tui-subnav-dl dt {
+    height: 24px;
+    line-height: 24px;
+    padding: 5px 0;
+}
+
+.tui-subnav-dl dt >span {
+    height: 15px;
+    line-height: 15px;
+    display: inline-block;
+    background: #91accf;
+    color: #fff;
+    padding: 3px 6px;
+    border-radius: 2px;
+}
+
+.tui-subnav-dl dd {
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px 5px;
+}
+
+.tui-subnav-items {
+    height: 30px;
+}
+
+.tui-subnav-items li {
+    height: 30px;
+    display: inline-block;
+}
+
+.tui-subnav-items>li a {
+    height: 15px;
+    line-height: 15px;
+    padding: 2px 6px;
+    color: #555;
+    display: inline-block;
+}
+
+.tui-subnav-items>li a:hover {
+    background: #d9d9d9;
+    border-radius: 2px;
+}
+
+.tui-user-account {
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    text-align: right;
+}
+
+.tui-user-info {
+    position: relative;
+    display: inline-block;
+}
+
+.tui-user-info>a {
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    padding: 0 10px;
+}
+
+.tui-user-icon {
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.tui-user-name {
+    display: inline-block;
+    font-size: 1.4rem;
+}
+
+.tui-user-name::after {
+    content: " ";
+    width: 0;
+    height: 0;
+    border-color: #fff transparent transparent;
+    border-width: 5px 5px 0 5px;
+    color: #000;
+    border-style: solid;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.tui-pop-user {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 0 0 10px 0;
+    color: #4d6584;
+    line-height: 24px;
+    z-index: 999;
+}
+
+.tui-pop-userNav {
+    background-color: #fff;
+    box-shadow: 1px 1px 3px 0 #ccc;
+    text-align: left;
+    border-radius: 0 0 4px 4px;
+    border-width: 3px 1px 1px;
+    border-style: solid;
+    border-color: #33bbd0 #d9d9d9 #d9d9d9;
+    margin-top: 5px;
+}
+
+.tui-pop-userNav::before {
+    content: "";
+    border-color: transparent transparent #33bbd0;
+    border-width: 0 5px 6px;
+    border-style: solid;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+.tui-usernav-items {}
+
+.tui-usernav-items li>a {
+    display: block;
+    padding: 0 20px;
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 1px solid #ecebec;
+}
+
+.tui-usernav-items li a:hover {
+    background-color: #8ecad3;
+    color: #fff;
+}
+/*********************************************
+ *
+ *
+ *footer
+ *
+ *
+ ***********************************************/
+
+.tui-footer {
+    height: 15px;
+    background-color: #282828;
+    padding: 15px 0;
+    color: #d9d9d9;
+    text-align: center;
+    width: 100%;
+    clear: both;
+}
+/*********************************************
+ *
+ *
+ *container
+ *
+ *
+ ***********************************************/
+
+.tui-container {
+    height: 100%;
+    min-height: 100%;
+    position: relative;
+}
+/*********************************************
+ *
+ *
+ *main
+ *
+ *
+ ***********************************************/
+
+.tui-main {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.tui-main::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.tui-view {
+    height: auto;
+}
+/*********************************************
+ *
+ *
+ *navigation
+ *
+ *
+ ***********************************************/
+
+.tui-navigation-container {
+    background-color: #4d6584;
+    color: #fff;
+    height: 100%;
+}
+
+.tui-navigation-container a {
+    color: #fff;
+}
+
+.tui-navigation {
+    height: 100%;
+}
+
+.tui-nav-title {
+    height: 80px;
+    line-height: 80px;
+    padding-left: 20px;
+    font-size: 2.2rem;
+    border-bottom: 1px solid #888;
+}
+
+.tui-submenu li {
+    line-height: 45px;
+    line-height: 45px;
+    font-size: 1.4rem;
+}
+
+.tui-submenu li a {
+    margin-left: 35px;
+    display: block;
+}
+
+.tui-submenu-fold> a::after {
+    content: "\e60c";
+    float: right;
+    margin-right: 20px;
+}
+
+.tui-submenu-unfold> a::after {
+    content: "\e60b";
+    float: right;
+    margin-right: 20px;
+}
+
+.tui-submenu-active,
+.tui-submenu li:hover {
+    background-color: #33bbd0;
+}
+
+.tui-submenu-children {
+    background-color: #41536f;
+    display: none;
+}
+
+.tui-submenu-children a {
+    padding-left: 10px;
+    color: #d4cccc;
+    display: block;
+}
+
+.tui-submenu-children>li:hover,
+.tui-submenu-children>li a:hover {
+    background-color: transparent;
+    color: #fff;
+}
+/*********************************************
+ *
+ *
+ *modal
+ *
+ *
+ ***********************************************/
+
+.tui-masking {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: #000;
+    opacity: 0.3;
+    z-index: 999;
+    left: 0;
+    top: 0;
+}
+
+.tui-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    min-height: 260px;
+    border-radius: 2px;
+    box-shadow: 0 1px 12px 0 rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.tui-modal-title {
+    background-color: #33bbd0;
+    color: #fff;
+    height: 48px;
+    line-height: 48px;
+    font-size: 1.6rem;
+    text-indent: 2em;
+    position: relative;
+}
+
+.tui-modal-remove {
+    position: absolute;
+    right: 15px;
+    top: 16px;
+    cursor: pointer;
+}
+
+.tui-modal-body {
+    padding: 20px;
+    text-indent: 2em;
+    box-sizing: border-box;
+}
+
+.tui-modal-handle {
+    height: 45px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tui-modal-handle button {
+    margin: 0 10px;
+}
+/*********************************************
+ *
+ *
+ *form
+ *
+ *
+ ***********************************************/
+
+.tui-form-group {}
+
+.tui-form-group .tui-form-control {
+    display: block;
+    padding: 2px 10px;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.tui-form-group:foucs {
+    border: 1px solid #66afe9;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+    outline: 0 none;
+}

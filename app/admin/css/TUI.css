@@ -1,0 +1,345 @@
+/*@version:1.0.0
+ *@author:wutianxiang
+ *@date:2015-8-17
+ */
+/**********************************************************/
+/*
+ *
+ *global
+ * 
+  **********************************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    font-family: "Microsoft YaHei", 'Arial', "宋体", 'sans-serif', 'tianicon';
+    font-size: 1.2rem;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.5rem;
+    height: 100%;
+    width: auto;
+}
+/**::after,
+*::before {
+    -moz-box-sizing: border-box;
+    -wekit-box-sizing: border-box;
+    box-sizing: border-box;
+    content: "";
+    clear: both;
+}*/
+
+a,
+input,
+textarea {
+    outline: none;
+}
+
+a {
+    color: #428bca;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:focus,
+a:hover,
+a:visited {
+    outline: none;
+    text-decoration: none;
+}
+
+img {
+    border: none;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='file'],
+select,
+textarea {
+    border-radius: 4px;
+}
+
+input[type='text'],
+input[type='password'] {
+    height: 2.4rem;
+    line-height: 2.4rem;
+}
+
+input[type='text']:focus,
+input[type='password']:focus,
+select:focus,
+textarea:foucs {
+    border-color: #66afe9;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+    outline: 0 none;
+}
+
+ul {
+    list-style-type: none;
+}
+/**********************************************************/
+/*
+ *
+ *tui-icon
+ * 
+ **********************************************************/
+
+@font-face {
+    font-family: 'tianicon';
+    src: url('/admin/fonts/tianicon.eot?2kn1om');
+    src: url('/admin/fonts/tianicon.eot?#iefix2kn1om') format('embedded-opentype'), url('/admin/fonts/tianicon.ttf?2kn1om') format('truetype'), url('/admin/fonts/tianicon.woff?2kn1om') format('woff'), url('/admin/fonts/tianicon.svg?2kn1om#tianicon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon {
+    font-family: 'tianicon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-tui-unlock:before {
+    content: "\75";
+}
+
+.icon-tui-clock:before {
+    content: "\76d1";
+}
+
+.icon-tui-off:before {
+    content: "\e608";
+}
+
+.icon-tui-user:before {
+    content: "\e609";
+}
+
+.icon-tui-expand:before {
+    content: "\e60b";
+}
+
+.icon-tui-collapse:before {
+    content: "\e60c";
+}
+
+.icon-tui-settings:before {
+    content: "\e60d";
+}
+
+.icon-tui-calendar:before {
+    content: "\e610";
+}
+
+.icon-tui-selected:before {
+    content: "\e611";
+}
+
+.icon-tui-edit:before {
+    content: "\e61a";
+}
+
+.icon-tui-delete:before {
+    content: "\e61b";
+}
+
+.icon-tui-remove2:before {
+    content: "\e61f";
+}
+
+.icon-tui-grid:before {
+    content: "\e651";
+}
+
+.icon-tui-help:before {
+    content: "\e65f";
+}
+
+.icon-tui-home:before {
+    content: "\e66a";
+}
+
+.icon-tui-image:before {
+    content: "\e600";
+}
+
+.icon-tui-loading:before {
+    content: "\e601";
+}
+
+.icon-tui-loack:before {
+    content: "\e602";
+}
+
+.icon-tui-unloak:before {
+    content: "\e603";
+}
+
+.icon-tui-remove:before {
+    content: "\e60a";
+}
+
+.icon-tui-up:before {
+    content: "\e604";
+}
+
+.icon-tui-right:before {
+    content: "\e605";
+}
+
+.icon-tui-down:before {
+    content: "\e606";
+}
+
+.icon-tui-left:before {
+    content: "\e607";
+}
+/**********************************************************/
+/*
+ *
+ *tui-col
+ * 
+  **********************************************************/
+
+.tui-col-1,
+.tui-col-2,
+.tui-col-3,
+.tui-col-4,
+.tui-col-5,
+.tui-col-6 {
+    float: left;
+    min-height: 1px;
+    padding: 0 15px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.tui-col-1 {
+    width: 16.66667%
+}
+
+.tui-col-2 {
+    width: 33.33333%;
+}
+
+.tui-col-3 {
+    width: 50%;
+}
+
+.tui-col-4 {
+    width: 66.66667%
+}
+
+.tui-col-5 {
+    width: 83.33333%
+}
+
+.tui-col-6 {
+    width: 100%
+}
+/**********************************************************/
+/*
+ *
+ *text-align,float,clearpadding
+ * 
+ */
+
+.tui-pull-left {
+    float: left;
+}
+
+.tui-pull-right {
+    float: right;
+}
+
+.tui-clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.tui-text-left {
+    text-align: left;
+}
+
+.tui-text-right {
+    text-align: right;
+}
+
+.tui-text-center {
+    text-align: center;
+}
+
+.tui-padding-clear {
+    padding: 0;
+}
+/**********************************************************/
+/*
+ *
+ *button
+ * 
+ ***********************************************************/
+
+.tui-btn {
+    -moz-user-select: none;
+    border-radius: 4px;
+    padding: 4px 16px;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 1.2rem;
+    border: none;
+    line-height: 2rem;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 5px;
+}
+
+.tui-btn-default {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+}
+
+.tui-btn-default:focus,
+.tui-btn-default:hover {
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+.tui-btn-blue {
+    background-color: #4d6584;
+    color: #fff;
+}
+
+.tui-btn-blue:active,
+.tui-btn-blue:hover,
+.tui-btn-blue:focus {
+    background-color: #295184;
+}
+
+.tui-btn-lightblue {
+    background-color: #33bbd0;
+    color: #fff;
+}
+
+.tui-btn-lightblue:active,
+.tui-btn-lightblue:hover,
+.tui-btn-lightblue:focus {
+    background-color: #2bacc0;
+}
