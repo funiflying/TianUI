@@ -1,5 +1,5 @@
-var loveApp = angular.module('loveApp', ['ngRoute', 'love.service']);
-loveApp.config(['$routeProvider', function ($routeProvider) {
+var TUIApp = angular.module('TUIApp', ['ngRoute', 'love.service']);
+TUIApp.config(['$routeProvider', function ($routeProvider) {
     $routeProvider.when('/tui', {
         templateUrl: '/admin/partials/tui.html'
     });
